@@ -5,3 +5,16 @@
     </div>
   </div>
 </div>
+<div class="message">
+  <div class="upper-message">
+    <div class="message-user">
+      <%= message.user.nickname %>
+    </div>
+    <div class="lower-message">
+      <div class="message-content">
+        <!-- 投稿したメッセージ内容 -->
+        <%= message.content %>
+      </div>
+      <%= image_tag message.image.variant(resize: '400x400'), class: 'message-image' %>
+  </div>
+</div>    
