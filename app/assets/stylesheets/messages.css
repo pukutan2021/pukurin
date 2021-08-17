@@ -2,14 +2,14 @@
   display: flex;
 }
 .side-bar {
-  background-color: #118a3f;
-  width: 300px;
+  background-color: #0a8d3c;
+  width: 200px;
   height: 100vh;
 }
 .side-bar-header {
   height: 100px;
   padding: 0 20px;
-  background-color: #19da33;
+  background-color: #0a8d3c;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,32 +19,12 @@
   color: #FAFAFA;
   text-decoration: none;
 }
-.create-room a {
-  font-size: 10px;
-  border: 1px solid lightblue;
-  padding: 14px;
-  color: deepskyblue;
-  text-decoration: none;
-}
-.rooms {
-  background-color: #2F3E51;
-  height: calc(100vh - 100px);
-  padding: 0 20px;
-  overflow: scroll;
-}
-.room {
-  padding: 20px 0 40px;
-}
-.room-name a {
-  text-decoration: none;
-  color: white;
-}
 
-.chat {
+.gallery {
   background-color: #FFFFFF;
-  width: calc(100vw - 300px);
+  width: calc(100vw - 200px);
 }
-.chat-header {
+.gallery-header {
   height: 100px;
   padding: 0 40px;
   display: flex;
@@ -52,7 +32,7 @@
 }
 .header-title {
   color: #333;
-  font-size: 24px;
+  font-size: 28px;
   margin-top: 36px;
 }
 .header-button {
@@ -60,8 +40,8 @@
 }
 .header-button a {
   text-decoration: none;
-  border: 1px solid darkred;
-  color: darkred;
+  border: 1px solid orangered;
+  color: orangered;
   padding: 20px;
 }
 
@@ -81,11 +61,7 @@
   color: #434a54;
   font-size: 16px;
 }
-.message-date {
-  color: #999;
-  font-size: 12px;
-  padding-left: 10px;
-}
+
 .lower-message {
   margin-top: 10px;
 }
@@ -113,7 +89,7 @@
   padding-left: 10px;
 }
 .form-submit {
-  background-color: #38AEF0;
+  background-color: #0a8d3c;
   border: none;
   color: white;
   font-size: 16px;
@@ -123,7 +99,7 @@
 }
 .form-image {
   font-size: 12px;
-  background-color: lightblue;
+  background-color: lightgreen;
   color: white;
   padding: 12px;
   width: 60px;

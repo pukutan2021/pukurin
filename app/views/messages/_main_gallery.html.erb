@@ -4,17 +4,27 @@
       Pukurin
     </div>
   </div>
-</div>
-<div class="message">
-  <div class="upper-message">
-    <div class="message-user">
-      <%= message.user.nickname %>
+  <div class="right-header">
+    <div class="header-button">
+      <%= link_to 'マイルーム', message_path(@message) %>
+      <%= link_to '削除', message_path(@message), method: :delete %>
     </div>
-    <div class="lower-message">
-      <div class="message-content">
-        <!-- 投稿したメッセージ内容 -->
-        <%= message.content %>
-      </div>
-      <%= image_tag message.image.variant(resize: '400x400'), class: 'message-image' %>
   </div>
-</div>    
+</div>
+
+<div class="message">
+  <% @messages.each do |message| %>
+    <div class="upper-message">
+      <div class="message-user">
+        <%= message.user.nickname %>
+      </div>
+      <div class="lower-message">
+        <div class="message-content">
+          <!-- 投稿したメッセージ内容 -->
+          <%= message.content %>
+        </div>
+        <%= image_tag message.image.variant(resize: '400x400'), class: 'message-image' %>
+      </div>
+    </div>
+  <% end %>
+</div>
